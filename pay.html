@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pay.css">
+    <title>Payment Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Page</h1>
+        <form id="paymentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Please enter your name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Please enter your address" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Please enter your phone number" required>
+
+            <label for="paymentMethod">Select Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod" onchange="showPaymentDetails()">
+                <option value="Cash on Delivery">Cash on Delivery</option>
+                <option value="Bank Transfer">Bank Transfer</option>
+                <option value="Credit Card">Credit Card</option>
+            </select>
+
+            <div id="paymentDetails"></div>
+
+            <div class="product-details">
+                <h2>Products to Pay</h2>
+
+                <div class="product-item">
+                    <img src="img2/ฝ้ากระ 1.webp" alt="Product Image">
+                    <div class="product-info">
+                        <h3>Sample Product 1</h3>
+                        <p>Quantity: <strong>1</strong></p>
+                        <p>Price: <strong>1,890 THB</strong></p>
+                        <p>Total Price: <strong>1,890 THB</strong></p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="img2/แพ้ง่าย 3.webp" alt="Product Image">
+                    <div class="product-info">
+                        <h3>Sample Product 2</h3>
+                        <p>Quantity: <strong>1</strong></p>
+                        <p>Price: <strong>1,080 THB</strong></p>
+                        <p>Total Price: <strong>1,080 THB</strong></p>
+                    </div>
+                </div>
+
+                <div class="total-price">
+                    <p>Total Amount: <strong>2,970 THB</strong></p>
+                </div>
+            </div>
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </div>
+    <script src="pay.js"></script>
+</body>
+</html>

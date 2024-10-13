@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgb(255, 0, 106);
+}
+.nav a{
+    color: rgb(12, 13, 14);
+    padding: 16px;
+}
+.nav a:hover{
+    background-color: rgb(243, 20, 20);
+}
+.content{
+    flex: 50%;
+    text-align: center;
+}
